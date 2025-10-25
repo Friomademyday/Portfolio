@@ -1,1 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Architect Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the "Official Cool" B&W theme */
+        :root {
+            --color-primary: #FFFFFF;
+            --color-secondary: #E5E5E5; /* Light Gray for backgrounds */
+            --color-accent: #000000;
+            --color-text: #000000;
+            --color-dark-text: #4a4a4a; /* Dark gray for secondary text */
+        }
+        body {
+            background-color: var(--color-accent); /* Black background */
+            color: var(--color-primary); /* White text */
+            font-family: 'Inter', sans-serif;
+        }
+        .container-card {
+            background-color: var(--color-primary); /* White main card */
+            color: var(--color-text); /* Black text inside card */
+        }
+        .mono {
+            font-family: 'Roboto Mono', monospace;
+        }
+        .divider {
+            height: 1px;
+            background-color: #333333; /* Darker gray for subtle lines */
+        }
+        .section-heading {
+            border-left: 4px solid #000000;
+        }
+        .skill-chip {
+            border: 1px solid #E5E5E5;
+            background-color: #F8F8F8;
+            color: #333333;
+        }
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid-cols-2-md {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
 
+    <!-- Main Container -->
+    <div class="min-h-screen p-4 md:p-8 flex justify-center items-start">
+        <div class="container-card w-full max-w-6xl rounded-xl shadow-2xl overflow-hidden p-6 md:p-10">
+
+            <!-- Header and Contact Info -->
+            <header class="pb-6 mb-8 border-b border-gray-200">
+                <div class="flex flex-col md:flex-row justify-between items-start">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mono">
+                            Michael Frio
+                        </h1>
+                        <p class="text-xl md:text-2xl font-light text-gray-600 mt-1">
+                            Digital Strategist, Full-Stack Developer & Technical Architect
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0 text-right text-sm">
+                        <p class="mono text-gray-700">
+                            <a href="mailto:friomademyday@gmail.com" class="hover:underline">friomademyday@gmail.com</a>
+                        </p>
+                        <p class="mono text-gray-700">
+                            <a href="tel:+2348076874766" class="hover:underline">08076874766</a>
+                        </p>
+                        <p class="mono text-gray-700">
+                            <a href="[Your GitHub URL]" target="_blank" class="hover:underline">GitHub Profile</a>
+                        </p>
+                        <p class="mono text-gray-700">
+                            <a href="[Your LinkedIn URL]" target="_blank" class="hover:underline">LinkedIn: Michael Frio</a>
+                        </p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Summary of Expertise -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-4 section-heading pl-3">
+                    Summary of Expertise
+                </h2>
+                <p class="text-gray-700 leading-relaxed">
+                    A multi-disciplinary professional blending Digital Marketing Strategy with deep Full-Stack Development and foundational Electrical/Mechanical Engineering. Proven ability to drive digital growth through high-quality content (video/graphics), manage complex technical projects (AI, robotics), and execute with exceptional attention to detail and creative consistency.
+                </p>
+            </section>
+
+            <!-- Key Achievements (The Official Cool Factor) -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-4 section-heading pl-3">
+                    Key Architectural Projects
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    
+                    <a href="[Link to AI Project Repo]" target="_blank" class="block p-6 rounded-lg border border-black hover:bg-gray-100 transition duration-300">
+                        <span class="text-4xl mb-2 inline-block">🧠</span>
+                        <h3 class="text-lg font-bold">Proprietary AI System</h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Architected and coded a functional AI model, demonstrating advanced Python proficiency and algorithmic design. (Click to see repository)
+                        </p>
+                    </a>
+
+                    <a href="[Link to Mechanical Project Repo]" target="_blank" class="block p-6 rounded-lg border border-black hover:bg-gray-100 transition duration-300">
+                        <span class="text-4xl mb-2 inline-block">🤖</span>
+                        <h3 class="text-lg font-bold">Custom Mechanical Body</h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Engineered and constructed a functional mechanical system, integrating C++ and Arduino for real-time control.
+                        </p>
+                    </a>
+
+                    <div class="p-6 rounded-lg border border-black">
+                        <span class="text-4xl mb-2 inline-block">⚡</span>
+                        <h3 class="text-lg font-bold">E.E. Foundations</h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Solid expertise in **Electrical & Electronics Engineering**, ensuring practical, grounded development solutions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Core Skill Sections -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+                <!-- Column 1: Digital Marketing & Creative -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 section-heading pl-3">
+                        Digital & Creative Stack
+                    </h2>
+
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Social Media & Marketing</h3>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="skill-chip px-3 py-1 rounded-full">Strategy & Execution</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Community Engagement</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Analytics & Reporting</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Trend Spotting</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Client Communication (Fast Response)</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Content Curation</span>
+                        </div>
+                        
+                        <h3 class="text-lg font-semibold text-gray-800 pt-2">Graphics & Video Production</h3>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="skill-chip px-3 py-1 rounded-full">Adobe After Effects</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Adobe Systems (Various)</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Canva Design</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Image Editing</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">High Quality Media Edits</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Column 2: Programming & Engineering -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 section-heading pl-3">
+                        Technical & Engineering Stack
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Web & Front-End Development</h3>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="skill-chip px-3 py-1 rounded-full">HTML5 / CSS3</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">JavaScript (ES6+)</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Web Applications (Front-end)</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Tailwind CSS (Fluency)</span>
+                        </div>
+                        
+                        <h3 class="text-lg font-semibold text-gray-800 pt-2">Systems & Firmware</h3>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="skill-chip px-3 py-1 rounded-full">Python (Data & AI)</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">C++ (Systems)</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Arduino (Embedded Systems)</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Mechanics & Prototyping</span>
+                            <span class="skill-chip px-3 py-1 rounded-full">Electronics Circuitry</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="divider mt-10 mb-8"></div>
+
+            <!-- START: Three-Part Professional Experience Section -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 section-heading pl-3">
+                    Professional Experience
+                </h2>
+
+                <!-- PART I: DIGITAL GROWTH & SOCIAL MEDIA MANAGEMENT -->
+                <h3 class="text-xl font-bold text-gray-900 mb-4">I. Digital Growth & Social Media Management</h3>
+                <div class="space-y-6 mb-8 border-b pb-6 border-gray-200">
+                    <!-- Experience 1 -->
+                    <div class="p-4 rounded-lg border border-gray-100 hover:border-gray-300 transition duration-300">
+                        <h4 class="text-lg font-semibold text-gray-900">Media Entertainment Outlet / Platform Growth Manager</h4>
+                        <p class="mono text-sm text-gray-500 mt-1 mb-2">REMOTE / 4 months</p>
+                        <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                            <li>Rapid Platform Initiation & Scaling: Successfully launched and scaled a new brand presence on Snapchat. Achieved 10,000+ new, engaged followers from a standing start within the project's brief timeframe.</li>
+                            <li>Content Assurance: Maintained a demanding daily content deployment schedule, strategically utilizing platform-specific trending formats to ensure maximum organic visibility and rapid audience connection.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="p-4 rounded-lg border border-gray-100 hover:border-gray-300 transition duration-300">
+                        <h4 class="text-lg font-semibold text-gray-900">Niche E-commerce Vendor / Digital Sales Specialist</h4>
+                        <p class="mono text-sm text-gray-500 mt-1 mb-2">REMOTE / 1.5 weeks</p>
+                        <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                            <li>Direct Sales & ROI: Managed a specific inventory clearance objective using targeted paid media. Conceptualized, edited (using professional video software), and boosted a single high-quality video post on Facebook.</li>
+                            <li>Quantifiable Success: This single-asset campaign generated over 60 verified sales in just ten days, demonstrating strong content-to-conversion efficacy and a significant positive return on ad spend (ROAS).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="p-4 rounded-lg border border-gray-100 hover:border-gray-300 transition duration-300">
+                        <h4 class="text-lg font-semibold text-gray-900">Pop Culture Fandom Channel / Audience Development Lead</h4>
+                        <p class="mono text-sm text-gray-500 mt-1 mb-2">REMOTE / 5 months</p>
+                        <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                            <li>Viral Content Creation: Drove specialized community expansion on TikTok. Successfully created and edited high-performing content, including one viral video that achieved over 400,000 views and 50,000 likes.</li>
+                            <li>Niche Audience Growth: Grew the dedicated follower base from 342 to over 4,000 active followers by consistently integrating platform trends and maintaining the niche's specific voice.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- PART II: TECHNICAL ARCHITECTURE & DEVELOPMENT -->
+                <h3 class="text-xl font-bold text-gray-900 mb-4">II. Technical Architecture & Development</h3>
+                <div class="space-y-6 mb-8 border-b pb-6 border-gray-200">
+                    
+                    <!-- Technical 1 -->
+                    <div class="p-4 rounded-lg border border-gray-100 hover:border-gray-300 transition duration-300">
+                        <h4 class="text-lg font-semibold text-gray-900">Proprietary AI System Architect</h4>
+                        <p class="mono text-sm text-gray-500 mt-1 mb-2">Independent Project / Multi-Stage Development</p>
+                        <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                            <li>Designed and implemented a custom AI model using Python, focusing on efficient data ingestion and complex pattern recognition.</li>
+                            <li>Developed and deployed multiple front-end websites (HTML, CSS, JavaScript), translating wireframes into fully responsive, modern user interfaces.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Technical 2 -->
+                    <div class="p-4 rounded-lg border border-gray-100 hover:border-gray-300 transition duration-300">
+                        <h4 class="text-lg font-semibold text-gray-900">High-Performance Algorithm Development</h4>
+                        <p class="mono text-sm text-gray-500 mt-1 mb-2">Project / Algorithm Implementation</p>
+                        <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                            <li>Engineered a professional-grade C++ banking algorithm focused on transaction security, high throughput, and optimized computational efficiency.</li>
+                            <li>Integrated low-level system design concepts (from C++ and Arduino fluency) to ensure real-time stability and reliability in application logic.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- PART III: CREATIVE PRODUCTION & MEDIA DESIGN -->
+                <h3 class="text-xl font-bold text-gray-900 mb-4">III. Creative Production & Media Design</h3>
+                <div class="space-y-6">
+                    
+                    <!-- Creative 1 -->
+                    <div class="p-4 rounded-lg border border-gray-100 hover:border-gray-300 transition duration-300">
+                        <h4 class="text-lg font-semibold text-gray-900">Advanced Video & Image Editor / Graphic Designer</h4>
+                        <p class="mono text-sm text-gray-500 mt-1 mb-2">Freelance & Internal Roles / Ongoing</p>
+                        <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                            <li>Executed numerous professional graphics design roles, creating brand assets, marketing materials, and high-quality imagery across various platforms.</li>
+                            <li>Produced high-definition video content, including commercial-grade ads, promotional edits, and creative narratives.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Creative 2 -->
+                    <div class="p-4 rounded-lg border border-gray-100 hover:border-gray-300 transition duration-300">
+                        <h4 class="text-lg font-semibold text-gray-900">Media Editing Software Fluency</h4>
+                        <p class="mono text-sm text-gray-500 mt-1 mb-2">Key Tools and Systems</p>
+                        <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                            <li>Mastery across industry-standard video and image editing suites, including: Adobe After Effects, Lightroom, Photoshop, CapCut Pro, as well as Picsart and Canva.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- What to Expect / Professional Commitments -->
+            <section>
+                <h2 class="text-2xl font-bold mb-4 section-heading pl-3">
+                    Professional Commitments & Deliverables
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-3 border rounded-lg border-gray-200">
+                        <p class="font-semibold">Daily Post Assurance</p>
+                        <p class="text-sm text-gray-600">Consistent, scheduled content deployment every day.</p>
+                    </div>
+                    <div class="p-3 border rounded-lg border-gray-200">
+                        <p class="font-semibold">Client Communications</p>
+                        <p class="text-sm text-gray-600">Fast, professional responses for all content engagement.</p>
+                    </div>
+                    <div class="p-3 border rounded-lg border-gray-200">
+                        <p class="font-semibold">High Quality Media</p>
+                        <p class="text-sm text-gray-600">Exceptional graphic design and video editing standards (After Effects, Canva).</p>
+                    </div>
+                    <div class="p-3 border rounded-lg border-gray-200">
+                        <p class="font-semibold">Attention to Detail</p>
+                        <p class="text-sm text-gray-600">Rigorous quality control across all code, content, and engineering designs.</p>
+                    </div>
+                    <div class="p-3 border rounded-lg border-gray-200">
+                        <p class="font-semibold">Consistency & Creativity</p>
+                        <p class="text-sm text-gray-600">Delivering both reliable output and innovative solutions.</p>
+                    </div>
+                    <div class="p-3 border rounded-lg border-gray-200">
+                        <p class="font-semibold">Trend Updating</p>
+                        <p class="text-sm text-gray-600">Feeds are continuously updated with the latest digital trends.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>
